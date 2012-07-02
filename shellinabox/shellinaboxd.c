@@ -98,7 +98,7 @@
 #include "shellinabox/vt100.h"
 
 #define PORTNUM           4200
-#define MAX_RESPONSE      48 
+#define MAX_RESPONSE      2048
 
 static int            port;
 static int            portMin;

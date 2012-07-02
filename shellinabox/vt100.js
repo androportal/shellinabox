@@ -250,7 +250,7 @@ VT100.prototype.reset = function(clearHistory) {
       this.console[this.currentScreen].style.width   = '';
     }
   }
-  this.scale                                         = 1.0;
+  this.scale=0.57;
   if (wasCompressed) {
     this.resizer();
   }
@@ -869,7 +869,7 @@ VT100.prototype.initializeElements = function(container) {
                        '<div id="menu"></div>' +
                        '<div id="keyboard" unselectable="on">' +
                        '</div>' +
-                       '<div id="scrollable">' +
+                       '<div id="scrollable" style="height:auto;min-height:350px;">' +
                          '<table id="kbd_button">' +
                            '<tr><td width="100%">&nbsp;</td>' +
                            '<td><img id="kbd_img" src="keyboard.png" /></td>' +
@@ -1072,7 +1072,7 @@ VT100.prototype.initializeElements = function(container) {
   this.numScrollbackLines      = 0;
   this.top                     = 0;
   this.bottom                  = 0x7FFFFFFF;
-  this.scale                   = 1.0;
+  this.scale                   = 0.57777777;
   this.resizer();
   this.focusCursor();
   this.input.focus();
@@ -1193,7 +1193,7 @@ VT100.prototype.resizer = function() {
                                      document.documentElement.clientHeight ||
                                      document.body.clientHeight))-1;
   var partial                  = height % this.cursorHeight;
-  this.scrollable.style.height = (height > 0 ? height : 0) + 'px';
+ // this.scrollable.style.height = (height > 0 ? height : 0) + 'px';
   this.padding.style.height    = (partial > 0 ? partial : 0) + 'px';
   var oldTerminalHeight        = this.terminalHeight;
   this.updateWidth();
@@ -2398,7 +2398,7 @@ VT100.prototype.showSoftKeyboard = function() {
   this.keyboard.style.display    = '';
 
   var kbd                        = this.keyboard.firstChild;
-  var scale                      = 1.0;
+  var scale                      = 0.57;
   var transform                  = this.getTransformName();
   if (transform) {
     kbd.style[transform]         = '';

@@ -81,7 +81,8 @@
       body {
         margin: 0px;
       }
-
+html{
+width:350px;}
     </style>
     <script type="text/javascript"><!--
       (function() {

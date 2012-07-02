@@ -127,7 +127,7 @@ ShellInABox.prototype.sessionClosed = function() {
     if (this.session) {
       this.session    = undefined;
       if (this.cursorX > 0) {
-        this.vt100('');
+        this.vt100('\r\n');
       }
       this.vt100('');
     }
