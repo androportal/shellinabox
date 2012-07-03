@@ -616,7 +616,7 @@ configure:10578: checking for utmpx.h
 configure:10578: result: yes
 configure:10592: checking for login_tty
 configure:10592: arm-none-linux-gnueabi-gcc -o conftest -Os   conftest.c  >&5
-/tmp/cc8QqEQZ.o: In function `main':
+/tmp/ccqF8myW.o: In function `main':
 conftest.c:(.text.startup+0x4): undefined reference to `login_tty'
 collect2: ld returned 1 exit status
 configure:10592: $? = 1
@@ -696,7 +696,7 @@ configure:10624: $? = 0
 configure:10633: result: yes
 configure:10647: checking for strlcat
 configure:10647: arm-none-linux-gnueabi-gcc -o conftest -Os   conftest.c -lutil  >&5
-/tmp/cc2BQK6e.o: In function `main':
+/tmp/cc2EASRi.o: In function `main':
 conftest.c:(.text.startup+0x4): undefined reference to `strlcat'
 collect2: ld returned 1 exit status
 configure:10647: $? = 1
@@ -1801,7 +1801,7 @@ configure:10884: checking for security/pam_misc.h
 configure:10884: result: no
 configure:10900: checking for dlopen
 configure:10900: arm-none-linux-gnueabi-gcc -o conftest -Os   conftest.c -lutil  >&5
-/tmp/cc8btD6m.o: In function `main':
+/tmp/cci06o9P.o: In function `main':
 conftest.c:(.text.startup+0x4): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:10900: $? = 1

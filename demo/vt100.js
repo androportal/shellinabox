@@ -1072,7 +1072,7 @@ VT100.prototype.initializeElements = function(container) {
   this.numScrollbackLines      = 0;
   this.top                     = 0;
   this.bottom                  = 0x7FFFFFFF;
-  this.scale                   = 0.57777777;
+  this.scale                   = 0.57;
   this.resizer();
   this.focusCursor();
   this.input.focus();
