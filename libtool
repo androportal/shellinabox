@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (shellinabox) 2.10
-# Libtool was configured on host jaghvi-VPCCA15FG:
+# Libtool was configured on host srikant:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -55,13 +55,13 @@ pic_mode=default
 fast_install=yes
 
 # The host system.
-host_alias=armel
-host=armel-unknown-none
+host_alias=arm
+host=arm-unknown-none
 host_os=none
 
 # The build system.
 build_alias=
-build=i686-pc-linux-gnu
+build=x86_64-unknown-linux-gnu
 build_os=linux-gnu
 
 # A sed program that does not truncate output.
@@ -117,14 +117,14 @@ deplibs_check_method="unknown"
 file_magic_cmd="\$MAGIC_CMD"
 
 # The archiver.
-AR="ar"
+AR="arm-none-linux-gnueabi-ar"
 AR_FLAGS="cru"
 
 # A symbol stripping program.
 STRIP="strip"
 
 # Commands used to install an old-style archive.
-RANLIB="ranlib"
+RANLIB="arm-none-linux-gnueabi-ranlib"
 old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$oldlib"
 old_postuninstall_cmds=""
 
@@ -234,7 +234,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/lib/gcc/arm-none-linux-gnueabi/4.6.1 /home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/lib/gcc /home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/arm-none-linux-gnueabi/lib /home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/arm-none-linux-gnueabi/libc/lib /home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/arm-none-linux-gnueabi/libc/usr/lib"
+sys_lib_search_path_spec="/home/srikant/stuff/arm-compiler/lib/gcc/arm-none-linux-gnueabi/4.6.1 /home/srikant/stuff/arm-compiler/lib/gcc /home/srikant/stuff/arm-compiler/arm-none-linux-gnueabi/lib /home/srikant/stuff/arm-compiler/arm-none-linux-gnueabi/libc/lib /home/srikant/stuff/arm-compiler/arm-none-linux-gnueabi/libc/usr/lib"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib"
@@ -254,7 +254,7 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/home/jaghvi/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_GNU_Linux/arm-none-linux-gnueabi/bin/ld"
+LD="arm-none-linux-gnueabi-ld"
 
 # Commands used to build an old-style archive.
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
