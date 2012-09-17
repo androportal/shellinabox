@@ -1,0 +1,338 @@
+launcher.o: shellinabox/launcher.c config.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/dirent.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dirent.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h \
+ /home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include/stddef.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/dlfcn.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dlfcn.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/grp.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+ /home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include-fixed/limits.h \
+ /home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include-fixed/syslimits.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/xopen_lim.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pwd.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ucontext.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/procfs.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/user.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+ /home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include/stdarg.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/waitflags.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/waitstatus.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/xlocale.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ioctl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctls.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctls.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/ioctl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctl-types.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/wait.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/resource.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/resource.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/utsname.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utsname.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/termios.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/termios.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/environments.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pty.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/utmp.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utmp.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/paths.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/utmpx.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utmpx.h \
+ shellinabox/launcher.h shellinabox/session.h libhttp/http.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+ logging/logging.h shellinabox/privileges.h shellinabox/service.h \
+ libhttp/hashmap.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h \
+ /home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h
+
+config.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/dirent.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dirent.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h:
+
+/home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include/stddef.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/dlfcn.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dlfcn.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/grp.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include-fixed/limits.h:
+
+/home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include-fixed/syslimits.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/xopen_lim.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pwd.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ucontext.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/procfs.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/user.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/home/srikant/stuff/arm-compiler/bin/../lib/gcc/arm-none-linux-gnueabi/4.6.1/include/stdarg.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/waitflags.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/waitstatus.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/xlocale.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ioctl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctls.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctls.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctls.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/ioctl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/ioctl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/ioctl.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/ioctl-types.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/wait.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/resource.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/resource.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/utsname.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utsname.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/termios.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/termios.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/environments.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pty.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/utmp.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utmp.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/paths.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/utmpx.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/utmpx.h:
+
+shellinabox/launcher.h:
+
+shellinabox/session.h:
+
+libhttp/http.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+logging/logging.h:
+
+shellinabox/privileges.h:
+
+shellinabox/service.h:
+
+libhttp/hashmap.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h:
+
+/home/srikant/stuff/arm-compiler/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h:
